@@ -1,0 +1,75 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--black);
+  padding: 4rem 2rem;
+}
+
+/* Titre  */
+
+footer h1 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Liste */
+
+footer .links-box {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+footer .links-box ul {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+footer .links-box ul li {
+  margin: 0 0.5rem;
+}
+
+/* Première liste */
+
+footer .links-box ul:first-child li a {
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
+}
+
+footer .links-box ul:first-child li a:hover {
+  text-decoration: underline;
+}
+
+/* Deuxième liste */
+
+footer .links-box ul:last-child li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  border: 2px solid var(--green);
+  padding: 0.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+footer .links-box ul:last-child li a:hover {
+  opacity: 0.5;
+}
+
+/* Sous-titre */
+
+footer h2 {
+  font-size: 12px;
+  opacity: 0.7;
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}

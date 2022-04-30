@@ -1,22 +1,29 @@
 html 
   head
     style
+      include ../public/style/root.css
       include ../public/style/footer.css
+      include ../public/style/coloors.css
+    script(src="https://kit.fontawesome.com/2da29667b7.js", crossorigin="anonymous")
   body
     footer
       h1 Leshy.com
-      ul
-        li
-          a Exemple
-        li 
-          a Exemple
-        li 
-          a Exemple
-      ul 
-        li
-            a Exemple
-        li 
-          a Exemple
-        li 
-          a Exemple
-      h2 Copyrigth
+      div(class="links-box")
+        ul(class="links")
+          li
+            a(href="#") Exemple
+          li 
+            a(href="#") Exemple
+          li 
+            a(href="#") Exemple
+        ul(class="networks") 
+          li
+            a(href="#")
+              i(class="fa-brands fa-twitter")
+          li 
+            a(href="#")
+              i(class="fa-brands fa-twitter")
+          li 
+            a(href="#")
+              i(class="fa-brands fa-twitter")
+      h2 Copyright 2022 Tous droits réservés | Ce site a été réalisé par Leshy.com
