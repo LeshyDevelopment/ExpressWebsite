@@ -10,6 +10,10 @@
   --black: black;
   --white: white;
   --green: green;
+
+  --title: 'Poppins', sans-serif;
+  --subtitle: 'Source Sans Pro', sans-serif;
+  --normal: 'Roboto', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
