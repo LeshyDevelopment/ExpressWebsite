@@ -7,6 +7,8 @@ const axios = require('axios');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/api/developers', (req, res) => {
   let users = [];
 
