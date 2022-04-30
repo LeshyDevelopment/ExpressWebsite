@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
   // .then(data => res.json(data))
   // .catch(err => next(err));
 
-  res.render('index', {
+  res.render('footer', {
     title: 'Hello',
   });
 });
