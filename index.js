@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const port = 3111;
 const path = require('path');
-const faker = require('faker');
 const axios = require('axios');
 
 app.set('views', path.join(__dirname, 'views'));
@@ -12,9 +11,9 @@ app.get('/api/developers', (req, res) => {
   let users = [];
 
   for (let id = 0; id < 100; id++) {
-    let firstName = faker.name.firstName();
-    let lastName = faker.name.lastName();
-    let email = faker.internet.email();
+    let firstName = 'TEST';
+    let lastName = 'TEST';
+    let email = 'TEST@gmail.com';
 
     users.push({
       id: id,
@@ -24,7 +23,7 @@ app.get('/api/developers', (req, res) => {
     });
   }
 
-  return { data: users };
+  res.send({ data: users });
 });
 
 app.get('/', (req, res) => {
